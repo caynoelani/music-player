@@ -14,14 +14,16 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <i class="fa-solid fa-music"></i>
-            <h1>MusicPlayer</h1>
+        <div class="nav nav-top container">
+            <button class="btn btn-open" id="btnOpen">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="logo logo-main">
+                <i class="fa-solid fa-music"></i>
+                <h1>MusicPlayer</h1>
+            </div>
         </div>
-        <button class="btn btn-open">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <nav class="nav nav-main">
+        <nav class="nav nav-main" id="mainNav">
             <div class="logo">
                 <i class="fa-solid fa-music"></i>
                 <h1>MusicPlayer</h1>
@@ -29,7 +31,7 @@
             <div class="playlist">
 
             </div>
-            <button class="btn btn-close">
+            <button class="btn btn-close" id="btnClose">
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </nav>
