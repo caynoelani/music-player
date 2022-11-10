@@ -15,7 +15,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     height: 100vh;
-    color: white;
+    color: #f5f5f5;
     background-image: linear-gradient(180deg, hsla(204, 9%, 11%, 0.90) 75%, transparent 200%);
     font-family: 'Inter', sans-serif;
     line-height: 1.7;
@@ -42,7 +42,16 @@ li {
 .btn {
     background-color: transparent;
     border: none;
-    color:  white;
+    color: #f5f5f5;
+}
+
+/* HEADER */
+header>.logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
 }
 
 
@@ -51,28 +60,60 @@ li {
     height: 100%;
     width: 16rem;
     position: absolute;
-    left: 0;
+    left: -16rem;
     top: 0;
     padding: 3rem;
     background-color: #1b1e1f;
-    box-shadow: .5rem 0rem 1rem rgba(0, 0, 0, 0.25);
     padding: 2rem;
     /* visibility: hidden; */
 }
 
-.nav-open {
+.btn-open {
     position: absolute;
-    left: 0;
+    left: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+}
+
+.btn-close {
+    position: absolute;
     top: 0;
+    left: 16rem;
+    font-size: 2rem;
+    background-color: #1b1e1f;
+    padding: .25rem .5rem;
+    border-bottom-right-radius: 1rem;
+    display: none;
 }
 
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-shadow: 2px 2px 5px #4A4857;
 }
 
 .logo i {
     font-size: 1.2rem;
     margin-right: .5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 992px ) {
+    .nav-main {
+        left: 0;
+        top: 0;
+        box-shadow: .5rem 0rem 1rem rgba(0, 0, 0, 0.25);
+    }
+
+    .btn-close {
+        display: block;
+    }
+
+    header>.logo {
+        display: none;
+    }
 }
