@@ -116,6 +116,15 @@ header>.logo {
     display: none;
 }
 
+
+/* PLAYLIST */
+.song-item {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 1rem;
+    margin: 2rem 0;
+}
+
 @media screen and (min-width: 992px ) {
     .nav-main {
         left: 0;
