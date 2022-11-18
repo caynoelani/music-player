@@ -13,6 +13,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- NAVBAR -->
     <header class="header">
         <div class="nav nav-top container">
             <button class="btn btn-open" id="btnOpen">
@@ -29,24 +30,85 @@
                 <h1>MusicPlayer</h1>
             </div>
             <div class="playlist">
+                <ul class="songlist">
 
+                </ul>
             </div>
+
             <button class="btn btn-close" id="btnClose">
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </nav>
     </header>
+
+    <!--MUSIC PLAYER -->
     <main class="main">
         <div class="player">
             <div class="container">
+                <figure class="song-active">
+                    <img src="./static/assets/img/music-solid.svg" alt="Album Cover">
+                </figure>
+                <div class="song-info">
+                    <h2 class="song-title">SONG 1</h2>
+                    <p>
+                        <span>Song Album</span>
+                        <span>Song Year</span>
+                    </p>
+                    <p> Artist Name</p>
+                    <div class="control-panel">
+                        <div class="range-wrapper">
+                            <input type="range" step="1" max="60" value="0" class="range" data-range data-seek>
 
+                            <div class="range-fill" data-range-fill></div>
+                        </div>
+                        <div class="duration-label wrapper">
+                            <span>0:00</span>
+                            <span>1:00</span>
+                        </div>
+                    </div>
+                    <div class="volume">
+                        <button class="btn-icon">
+                            <span>volume_up</span>
+                        </button>
+        
+                        <div class="range-wrapper">
+                            <input type="range" step="0.05" max="1" value="1" class="range">
+        
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-control wrapper">
+
+                    <button>
+                        <span>repeat</span>
+                        <span>repeat_one</span>
+                    </button>
+
+                    <button>
+                        <span>skip_previous</span>
+                    </button>
+
+                    <button>
+                        <span>play_arrow</span>
+                        <span>pause</span>
+                    </button>
+
+                    <button>
+                        <span>skip_next</span>
+                    </button>
+
+                    <button>
+                        <span>shuffle</span>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="playlist">
+        <!-- <div class="playlist">
             <ul class="song-list">
                 
             </ul>
-        </div>
+        </div> -->
     </main>
 </body>
 </html>
